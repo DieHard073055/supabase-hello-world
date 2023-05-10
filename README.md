@@ -20,7 +20,7 @@ const supabase = createClient(
 
 const table_name = "countries"
 ```
-
+### Inserting
 The `insert_default_data` function is responsible for inserting default data to our table using the 'upsert' method. In case of any errors during this operation, it logs the error to the console. On successful operation, it logs the inserted data.
 
 ```javascript

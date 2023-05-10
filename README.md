@@ -45,6 +45,8 @@ const insert_default_data = async () => {
   }
 }
 ```
+
+### Selecting
 The `select_all_data` function retrieves all the records from the 'countries' table and logs them to the console. Errors, if any, are also logged to the console.
 
 ```javascript

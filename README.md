@@ -63,6 +63,7 @@ const select_all_data = async () => {
   }
 }
 ```
+### Start using your application
 Finally, we call the `select_all_data` function inside the main function to start the application.
 
 ```javascript

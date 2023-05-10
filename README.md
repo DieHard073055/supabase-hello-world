@@ -13,14 +13,15 @@ This is available via [NPM](https://www.npmjs.com) as dev dependency.
 ```bash
 npm i supabase --save-dev
 ```
-### To run:
-```bash
-npx supabase -h
-```
+
 Alternatively, if you're using macOS, supabase is available via Homebrew.
+```bash
+brew install supabase/tap/supabase```
+
+### To run:
 
 ```bash
-brew install supabase/tap/supabase
+npx supabase -h
 ```
 ### To upgrade:
 

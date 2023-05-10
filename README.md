@@ -1,43 +1,26 @@
 
 # Supabase Hello World
 
-This project serves as a simple 'Hello World' example to illustrate how to connect to a Supabase database, perform an upsert operation to insert default data, and execute a select operation to retrieve all the data.
+This project serves as a simple `Hello World` example to illustrate how to connect to a Supabase database, perform an upsert operation to insert default data, and execute a select operation to retrieve all the data.
 
 ## Usage Instructions
 
 ### Installation
+Follow the instructions on [Supabase CLI Repo](https://github.com/supabase/cli/blob/main/README.md).
 
-Install `supabase` using npm. 
-This is available via [NPM](https://www.npmjs.com) as dev dependency.
-
-```bash
-npm i supabase --save-dev
-```
-
-Alternatively, if you're using macOS, supabase is available via Homebrew.
-	```bash
-	brew install supabase/tap/supabase
-	```
-
-### To run:
-	```bash
-	npx supabase -h
-	```
-### To upgrade:
-
-```bash
-brew upgrade supabase
-```
 ### Starting Supabase
-Start supabase using the following command:
+1. Start `supabase` using the following command. 
 ```bash
 supabase start
 ```
-This command will start the Docker containers for the supabase stack. Once you are done pulling the containers and have seen the container IP addresses, you can proceed to the next step.
+> ⚠️ Do note: the above command is for the Native installation of Supabase.
+> If you install using `npm`, prefix your command with `npx`. Eg: `npx supabase start`
 
-Access the Supabase studio via the URL shown on the screen when you start the container.
+This above command will start the Docker containers for the supabase stack. Once you are done pulling the containers and have seen the container IP addresses, proceed to the next step.
 
-Make sure you record down the SUPABASE_URL and SUPABASE_ANON_KEY into your .env file. These will be used by the application to connect to the Supabase client.
+2. Access the Supabase studio via the URL shown on the screen when you start the container.
+3. Record down the `SUPABASE_URL` and `SUPABASE_ANON_KEY` into your `.env` file. These will be used by the application to connect to the Supabase client.
+4. Happy developing!
 
 
 ## Code Explanation

@@ -17,10 +17,11 @@ const supabase = createClient(
   process.env.SUPABASE_URL,
   process.env.SUPABASE_ANON_KEY
 )
-```
 
 const table_name = "countries"
-The insert_default_data function is responsible for inserting default data to our table using the 'upsert' method. In case of any errors during this operation, it logs the error to the console. On successful operation, it logs the inserted data.
+```
+
+The `insert_default_data` function is responsible for inserting default data to our table using the 'upsert' method. In case of any errors during this operation, it logs the error to the console. On successful operation, it logs the inserted data.
 
 ```javascript
 const insert_default_data = async () => {
@@ -44,7 +45,7 @@ const insert_default_data = async () => {
   }
 }
 ```
-The select_all_data function retrieves all the records from the 'countries' table and logs them to the console. Errors, if any, are also logged to the console.
+The `select_all_data` function retrieves all the records from the 'countries' table and logs them to the console. Errors, if any, are also logged to the console.
 
 ```javascript
 const select_all_data = async () => {
@@ -60,7 +61,7 @@ const select_all_data = async () => {
   }
 }
 ```
-Finally, we call the select_all_data function inside the main function to start the application.
+Finally, we call the `select_all_data` function inside the main function to start the application.
 
 ```javascript
 const main = async () => {
@@ -68,6 +69,19 @@ const main = async () => {
 }
 
 main().then(console.log).catch(console.error)
+```
+
+logs from the code above
+```
+[
+  { name: 'UK' },
+  { name: 'US' },
+  { name: 'Africa' },
+  { name: 'Mexico' },
+  { name: 'Hungaria' },
+  { name: 'Zimbabwe' },
+  { name: 'Norway' }
+]
 ```
 Project Structure
 Here's the directory structure of the project:

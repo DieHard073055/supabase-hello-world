@@ -3,6 +3,41 @@
 
 This project serves as a simple 'Hello World' example to illustrate how to connect to a Supabase database, perform an upsert operation to insert default data, and execute a select operation to retrieve all the data.
 
+## Usage Instructions
+
+### Installation
+
+1. Install supabase using npm. This is available via [NPM](https://www.npmjs.com) as dev dependency.
+
+```bash
+npm i supabase --save-dev
+```
+### To run:
+```bash
+npx supabase -h
+```
+Alternatively, if you're using macOS, supabase is available via Homebrew.
+
+```bash
+brew install supabase/tap/supabase
+```
+### To upgrade:
+
+```bash
+brew upgrade supabase
+```
+### Starting Supabase
+Start supabase using the following command:
+```bash
+supabase start
+```
+This command will start the Docker containers for the supabase stack. Once you are done pulling the containers and have seen the container IP addresses, you can proceed to the next step.
+
+Access the Supabase studio via the URL shown on the screen when you start the container.
+
+Make sure you record down the SUPABASE_URL and SUPABASE_ANON_KEY into your .env file. These will be used by the application to connect to the Supabase client.
+
+
 ## Code Explanation
 ### Importing modules
 The `connection.js` file contains the main logic of the application. Here's a breakdown of its content:

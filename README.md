@@ -7,7 +7,8 @@ This project serves as a simple 'Hello World' example to illustrate how to conne
 
 ### Installation
 
-1. Install supabase using npm. This is available via [NPM](https://www.npmjs.com) as dev dependency.
+Install `supabase` using npm. 
+This is available via [NPM](https://www.npmjs.com) as dev dependency.
 
 ```bash
 npm i supabase --save-dev

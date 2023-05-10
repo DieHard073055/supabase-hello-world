@@ -4,7 +4,7 @@
 This project serves as a simple 'Hello World' example to illustrate how to connect to a Supabase database, perform an upsert operation to insert default data, and execute a select operation to retrieve all the data.
 
 ## Code Explanation
-
+### Importing modules
 The `connection.js` file contains the main logic of the application. Here's a breakdown of its content:
 
 First, we import the necessary modules and initialize a new Supabase client with the environment variables for the Supabase URL and ANON Key.

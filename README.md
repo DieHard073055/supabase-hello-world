@@ -15,12 +15,14 @@ npm i supabase --save-dev
 ```
 
 Alternatively, if you're using macOS, supabase is available via Homebrew.
-```bash
-brew install supabase/tap/supabase
-## To run:
-```bash
-npx supabase -h
-```
+	```bash
+	brew install supabase/tap/supabase
+	```
+
+### To run:
+	```bash
+	npx supabase -h
+	```
 ### To upgrade:
 
 ```bash

@@ -2,8 +2,8 @@ const { createClient } = require('@supabase/supabase-js')
 
 require('dotenv').config()
 const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_ANON_KEY
+  process.env.API_URL,
+  process.env.ANON_KEY
 )
 const table_name = "countries"
 const insert_default_data = async () => {
